@@ -10,8 +10,19 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      
+    return Scaffold(
+      body: Column(
+        children: const [
+          Text(
+            'Start a Meeting',
+            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            'Start or join a video meeting on the go',
+            style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+          ),
+        ],
+      ),
     );
   }
 }
