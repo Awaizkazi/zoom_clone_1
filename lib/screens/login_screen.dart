@@ -12,15 +12,17 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: const [
-          Text(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text(
             'Start a Meeting',
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
-          Text(
+          const Text(
             'Start or join a video meeting on the go',
             style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
           ),
+          Image.asset('assets/images/onboarding.jpg')
         ],
       ),
     );
